@@ -22,7 +22,7 @@ const App: React.FC = () => {
         {/* Quiz Card */}
         <button 
           onClick={() => setView('QUIZ')}
-          className="group relative p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-[#009999]/50 hover:bg-white/10 transition-all duration-300 text-left overflow-hidden"
+          className="group relative p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-[#00d2d3]/50 hover:bg-white/10 transition-all duration-300 text-left overflow-hidden shadow-2xl"
         >
           <div className="absolute -right-8 -bottom-8 text-9xl opacity-10 group-hover:scale-110 transition-transform">🧠</div>
           <h2 className="text-3xl font-black text-[#00d2d3] mb-4">Quiz Comercial</h2>
@@ -35,19 +35,19 @@ const App: React.FC = () => {
         {/* Role Play Card */}
         <button 
           onClick={() => setView('ROLEPLAY')}
-          className="group relative p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-[#009999]/50 hover:bg-white/10 transition-all duration-300 text-left overflow-hidden"
+          className="group relative p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-[#00d2d3]/50 hover:bg-white/10 transition-all duration-300 text-left overflow-hidden shadow-2xl"
         >
           <div className="absolute -right-8 -bottom-8 text-9xl opacity-10 group-hover:scale-110 transition-transform">🎭</div>
           <h2 className="text-3xl font-black text-[#00d2d3] mb-4">Role Play</h2>
           <p className="text-gray-400 leading-relaxed mb-6">
-            Simule atendimentos reais. Treine a condução correta e quebre objeções na prática.
+            Casos reais para treinar ao vivo. Aprenda a quebrar objeções com o Método Ômega.
           </p>
-          <div className="text-sm font-bold uppercase tracking-widest text-white/50">Simulador de Atendente →</div>
+          <div className="text-sm font-bold uppercase tracking-widest text-white/50">Gabarito de Vendas →</div>
         </button>
       </div>
 
       <div className="mt-12 text-xs text-white/30 uppercase tracking-[0.3em]">
-        Método Assessoria Ômega • Prática & Teoria
+        Método Assessoria Ômega • Excelência em Conversão
       </div>
     </div>
   );
@@ -62,7 +62,7 @@ const App: React.FC = () => {
            <span className="font-black text-xl tracking-tighter uppercase">ASSESSORIA <span className="text-[#00d2d3]">ÔMEGA</span></span>
         </button>
         {view !== 'HOME' && (
-          <QuizButton onClick={() => setView('HOME')} variant="outline" className="px-4 py-2 text-sm">
+          <QuizButton onClick={() => setView('HOME')} variant="outline" className="px-4 py-2 text-sm border-[#00d2d3] text-[#00d2d3]">
             Voltar ao Hub
           </QuizButton>
         )}
@@ -81,7 +81,7 @@ const App: React.FC = () => {
 
       <footer className="p-8 text-center border-t border-white/5 mt-auto">
         <p className="text-white/30 text-xs uppercase tracking-widest">
-          Desenhado para Performance Comercial • © 2024
+          Desenvolvido para Treinamento Comercial • © 2024
         </p>
       </footer>
     </div>
